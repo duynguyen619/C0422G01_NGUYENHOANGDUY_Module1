@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="sothunhat" placeholder="nhap so thu 1">
+<input type="number" id="sothuhai" placeholder="nhap so thu 2"><br><br>
+<button type="button" onclick="cong()">Addition(+)</button>
+<button type="button" onclick="tru()">Subtraction(-)</button>
+<button type="button" onclick="nhan()">Subtraction(*)</button>
+<button type="button"  onclick="chia()">Division(/)</button><br>
+<p id="result">Result Division:</p>
+
+<script>
+  let a;
+  let b;
+  let result;
+  function cong() {
+    a =parseInt(document.getElementById("sothunhat").value);
+    b =parseInt( document.getElementById("sothuhai").value);
+    {result="result division:" +(a + b)}
+    document.getElementById("result").innerHTML =result
+
+  }
+  function tru() {
+    a =parseInt(document.getElementById("sothunhat").value);
+    b = parseInt(document.getElementById("sothuhai").value);
+    { result=  "result division:" + (a - b)}
+    document.getElementById("result").innerHTML =result;
+
+  }
+  function nhan(){
+    a =parseInt(document.getElementById("sothunhat").value);
+    b = parseInt(document.getElementById("sothuhai").value);
+    {result=  "result division:" + (a * b)}
+    document.getElementById("result").innerHTML =result;
+
+  }
+  function chia(){
+    a =parseInt(document.getElementById("sothunhat").value);
+    b = parseInt(document.getElementById("sothuhai").value);
+    { result=  "result division:" + (a / b)}
+    result= document.getElementById("result").innerHTML=result;
+  }
+
+
+</script>
+</form>
+</body>
+</html>
