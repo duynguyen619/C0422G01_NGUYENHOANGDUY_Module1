@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="number" placeholder="số tuổi">
+<button type="button" onclick="check()">kiểm tra</button>
+<p id="result">kết quả là:</p>
+<script>
+    function check(){
+        let number=document.getElementById("number").value;
+        if (number<=16){
+            document.getElementById("result").innerText="không vào lớp 10";
+        }
+    }
+</script>
+</body>
+</html>
