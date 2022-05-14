@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="vung">
+    <option>Trong thành phố</option>
+    <option>Ngoài thành phố</option>
+</select>
+<p>Nhập số phút đã gọi</p>
+<p><input type="text"id="phut"><button type="button" onclick="nut()">Bấm</button></p>
+<p id="result">Kết Qủa</p>
+<script>
+    function nut() {
+        let a=document.getElementById('phut').value;
+        let b=document.getElementById('vung').value;
+        let tiendt;
+        let cuoc;
+        switch (b) {
+            case "Trong thành phố": cuoc=250;break;
+            case "Ngoài thành phố": cuoc=270;break;
+        }
+        tiendt =a*cuoc;
+        document.getElementById('result').innerHTML = 'cước phí cuộc gọi là' + tiendt;
+    }</script>
+</body>
+</html>
