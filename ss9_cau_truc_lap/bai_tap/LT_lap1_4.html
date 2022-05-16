@@ -5,6 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let f0= 0;
+    let f1= 1;
+    let fn= f0+f1;
+    while (fn%5!=0){
+        f0=f1
+        f1=fn
+        fn=f0+f1
+    }
+    document.write("số đầu tiên chia hết cho 5 trong dãi fibonaci là:" +fn)
+</script>
 </body>
 </html>
