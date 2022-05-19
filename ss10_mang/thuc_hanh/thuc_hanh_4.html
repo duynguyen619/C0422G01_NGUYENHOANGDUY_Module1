@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  1.    function changeValue() {
+    2.       let positionX = prompt("X: ");
+    3.       let positionY = prompt("Y: ");
+    4.       data = "";
+    5.       board[positionX][positionY] = "x";
+    6.       for (let i = 0; i < 5; i++) {
+      7.           data += "<br/>";
+      8.           for (let j = 0; j < 5; j++) {
+        9.               data += board[i][j] + "    ";
+        10.           }
+      11.       }
+    12.       data += "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
+    13.       b.innerHTML = "<hr/>" + data;
+    14.    }
+</script>
+</body>
+</html>

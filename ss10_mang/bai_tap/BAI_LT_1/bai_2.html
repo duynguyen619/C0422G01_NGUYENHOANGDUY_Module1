@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = Array(10);
+    for (let i = 0; i < a.length; i++) {
+        a[i] = parseInt(Math.random()*100 );
+    }
+    document.write(a);
+    document.write("<br>");
+    let max = a[0];
+    for (let i = 0; i <a.length ; i++) {
+        if (max<a[i]){
+            max=a[i];
+            index=i
+        }
+    }document.write("max:" + max + " at position " + index);
+</script>
+</body>
+</html>
