@@ -6,10 +6,14 @@
 </head>
 <body>
 <script>
-    let arr=[]
-    for (let i=0;i<10;i++){
-        arr[i]=parseInt(prompt("nhập số"))}
-    for
+    let in_number = prompt("nhập vào dãy số nguyên bất kì :");
+    let arrs = [];
+    arrs = in_number.split("");
+    let arrsNew = [];
+    for ( let i = arrs.length - 1 ; i >= 0 ; i--){
+        arrsNew.push(arrs[i])
+    }
+    document.write(arrsNew);
 </script>
 </body>
 </html>
