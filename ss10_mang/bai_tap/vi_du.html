@@ -9,18 +9,19 @@
     let arr = []
     let a = 0
     for (let i = 0; i < 10; i++) {
-        arr[i] = +prompt("Nhập số phần tử trong mảng")
+        arr[i] = prompt("nhập vào giá trị của phần tử" + i + "của mảng")
     }
-    for (let i = 0; i < arr.length - 1; i++) {//1284272
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] < arr[j]) {
-                let tmp = arr[i]
-                arr[i] = arr[j]
-                arr[j] = tmp
+    document.write(arr + "<br>")
+    let V = parseInt(prompt("Nhập số V"))
+    for (i = 0; i < arr.length; i++) {
+        if (V == arr[i]) {
+            for (let j = i; j < arr.length; j++) {
+                arr[j]=arr[j+1];
             }
+            arr[arr.length-1]=0;
+            i--;
         }
-    }
-    document.write(arr)
+    }document.write(arr)
 </script>
 </body>
 </html>

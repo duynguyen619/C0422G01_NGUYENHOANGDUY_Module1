@@ -6,7 +6,22 @@
 </head>
 <body>
 <script>
-
+    let n=parseInt(prompt("nhap do dai của mảng"))
+    let arr=new Array(n)
+    for (i=0;i<n;i++){
+        arr[i]=prompt("nhập vào giá trị của phần tử" + i + "của mảng")
+    }
+    document.write(arr + "<br>")
+    let V = parseInt(prompt("Nhập số V"))
+    for (i = 0; i < n; i++) {
+        if (V == arr[i]) {
+            for (let i=0;i<n; i++) {
+                arr[i]=arr[i+1];
+            }
+            arr[n-1]=0;
+            i--;
+        }
+    }document.write(arr)
 </script>
 </body>
 </html>
