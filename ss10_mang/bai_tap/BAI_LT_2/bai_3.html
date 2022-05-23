@@ -5,6 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let number = prompt('Nhap phan tu vao mang')
+    let arr = number.trim();
+    count=1
+    for (let i = 0;i<arr.length;i++){
+        if (arr[i]==' '&&arr[i+1]!= ' '){
+            count++
+        }
+    }
+    document.write('có tất cả '+count+' từ')
+</script>
 </body>
 </html>
