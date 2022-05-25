@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function factorial(interger) {
+    let fac = interger;
+    for (let i = interger - 1 ; i >= 1 ; i--){
+      fac *= i;
+    }
+    document.write("Giai thừa của một số :&nbsp;" + fac);
+    return fac;
+  }
+  let input = parseInt(prompt("nhập số2:"));
+  factorial(input);
+</script>
+</body>
+</html>
