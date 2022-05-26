@@ -6,7 +6,16 @@
 </head>
 <body>
 <script>
-    
+  function change() {
+    let c = a;
+    a = b;
+    b = c;
+    alert("A =" + a);
+    alert("B =" + b);
+  }
+  let a = prompt("nhập A:");
+  let b = prompt("nhập B:");
+  change(a, b);
 </script>
 </body>
 </html>
