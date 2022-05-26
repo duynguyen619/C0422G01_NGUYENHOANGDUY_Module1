@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    let array = prompt("input arayy:");
+    let input = prompt("enter one charter:");
+    document.write(array + "<br>");
+    function checkchar(array , input) {
+        let count = 0;
+        for (let i = 0 ; i < array.length ; i++){
+            if (input == array[i]){
+                count++;
+            }
+        }
+        if (count == 0){
+            return count++;
+        }
+        return "kí tự bạn vừa nhập :"+ input + "<br> xuất hiện :" + count + "lần";
+    }
+    document.write(checkchar(array, input));
+</script>
 </body>
 </html>
